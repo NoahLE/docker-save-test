@@ -76,10 +76,10 @@ WSGI_APPLICATION = 'composeexample.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('DB_NAMEF'),
-        'USER': os.environ.get('DB_USERNAME'),
-        'PASSWORD': os.environ.get('DB_PASSWORD'),
-        'HOST': 'localhost',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        # 'PASSWORD': os.environ.get('DB_PASSWORD'),
+        'HOST': 'db',
         'PORT': 5432,
     }
 }
